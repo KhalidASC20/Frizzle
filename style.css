@@ -221,3 +221,42 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+#insta_face img {
+  width: 50px;
+  display: inline;
+  
+  
+}
+#insta img {
+  width: 80px;
+  
+}
+#face img {
+  width: 50px;
+}
+
+#ContactInfo {
+  background-color: gainsboro;
+  height: 180px;
+  margin-top: 200px;
+  margin-left: 0px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+
+#ContactInfo h1 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-size: large;
+
+}
+
+#ContactInfo p {
+  
+  color: black;
+  font-size: 20px;
+  text-align: flex-start;
+
+}
