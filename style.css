@@ -24,9 +24,9 @@
 
 #Top_Border {
     background-color:gainsboro;
-    margin-top: -20px;
-    margin-left: -20px;
-    margin-right: -20px;
+    font-family: 'Comic Sans MS'; 
+    font-weight: bold;
+    
     
 }
 
@@ -50,14 +50,33 @@
     top: -10px;
 }
 
+#Slideshow_Welcome{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(222, 71, 6, .7);
+  border-radius: 10px;
+  
+}
+
 #Welcome_To_Frizzle {
     display: flex;
     justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 100px;
+    padding-top: 70px;
+    
 }
 
 .hairType {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+}
+
+#Hairtype_Buttons{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #threeByThree {
@@ -67,31 +86,41 @@
 
 .dropbtn {
     background-color: #DE4706;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
     color: white;
-    padding: 16px;
+    padding: 25px;
     font-size: 16px;
-    border: none;
+    border-radius: 8px;
 }
 
 #Button_Div{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: 'Comic Sans MS';
+    padding-top: 25px;    
 }
 
 .Type2_Button {
     position: relative;
-    display: inline-block;
+    display: inline-block; 
+    padding-top: 50px;
+    padding-bottom: 55px;   
 }
+.Type2_Button {border-radius: 8px;}
 
 .Type3_Button {
     position: relative;
     display: inline-block;
-    
+    padding-top: 55px;
+    padding-bottom: 55px;     
 }
 
 .Type4_Button {
     position: relative;
     display: inline-block;
+    padding-top: 55px;
+    padding-bottom: 50px; 
 }
 
 .Type2_content {
@@ -159,9 +188,14 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
   position: relative;
   margin: auto;
+  padding-right: -50px;
+  padding-top: 70px;
+  flex-direction: column;
 }
 
 /* Caption text */
@@ -180,6 +214,7 @@ img {vertical-align: middle;}
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
+  padding-top: 70px;
   position: absolute;
   top: 0;
 }
@@ -245,18 +280,117 @@ img {vertical-align: middle;}
   margin-bottom: -20px;
 }
 
-#ContactInfo h1 {
-  color: black;
-  font-size: 30px;
-  text-align: center;
-  font-size: large;
+#Contact_Img {
+  display: flex;
+  
+  justify-content: center;
 
 }
 
 #ContactInfo p {
   
-  color: black;
+  color: #DE4706;
   font-size: 20px;
   text-align: flex-start;
+  padding-left: 10px;
 
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #DE4706;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #DE4706;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: gainsboro;
+  padding: 20px;
+}
+
+h3{
+  color:#DE4706;
+  padding-left: 10px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+#about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #DE4706;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #DE4706;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }

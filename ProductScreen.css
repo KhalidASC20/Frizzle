@@ -22,17 +22,38 @@
     color: white;
   }
 
+  #Top_Border {
+    background-color:gainsboro;
+    font-family: 'Comic Sans MS'; 
+    font-weight: bold;
+    
+    
+}
 
+#Frizzle_Logo {
+  display: flex;
+  justify-content: center;
+  top: -10px;
+}
 
 #Hair_Description {
     display: flex;
     justify-content: center;
+    
 } 
 
+#Color_Div {
+  background-color: rgba(222, 71, 6, .5);
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 #Type2_Hair_Image img {
-    width: 400px;
-    border: 2px solid black;
+    max-width: 400px;
+    border: 10px solid black;
     margin: 10px 0px;
+    
     text-align: center;
 }
 
@@ -42,9 +63,7 @@
     text-align: center;
     background-color:#E5E5E5;
     margin: 10px 0px;
-    
-    
-
+    border: solid black;       
 }
 
 #Type2A_Celebs {
@@ -66,12 +85,14 @@
 
 .dropbtn {
   background-color: #DE4706;
+  font-family: 'Comic Sans MS';
+  font-weight: bold;
   color: white;
   padding: 16px;
   font-size: 16px;
-  border: none;
+  border-radius: 8px;
   cursor: pointer;
-}
+  }
 
 .dropbtn:hover, .dropbtn:focus {
   background-color: #DE4706;
@@ -107,7 +128,29 @@
 
 #myDropdown {
   float: left;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+#myDropdown3 a{
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+}
+
+.link2 {
+  text-align: center;
+}
+
+.link3 {
+  text-align: center;
+}
+
+.dropbtn-content {
+  display: flex;
+  justify-self: start;
+  
 }
 
 .dropdown-content img {
@@ -128,6 +171,7 @@
 #Fix_Blocks{
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 100px;
 }
 
 #Fix_Blocks div {
@@ -138,6 +182,14 @@
 .dropdown p:hover {background-color: #ddd;}
 
 .show {display: block;}
+
+#Botton_Div h2{
+  background-color: black;
+  color: black;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 
   
